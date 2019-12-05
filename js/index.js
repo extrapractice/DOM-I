@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM <br> Is <br> Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -45,7 +45,6 @@ logo.src = siteContent["nav"]["img-src"]
 
 // Updating Navigation
 let navLinks = document.querySelectorAll('nav a')
-console.log(navLinks)
 navLinks[0].text = siteContent.nav["nav-item-1"]
 navLinks[1].text = siteContent.nav["nav-item-2"]
 navLinks[2].text = siteContent.nav["nav-item-3"]
@@ -73,8 +72,7 @@ navLinks.forEach(link => {
 
 // cta section
 let ctaTextH1 = document.querySelector('.cta-text h1')
-ctaTextH1.innerHTML = siteContent.cta.h1
-
+ctaTextH1.innerHTML = siteContent['cta']['h1']
 let ctaButton = document.querySelector('.cta-text button')
 ctaButton.innerText = siteContent.cta.button
 
