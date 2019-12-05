@@ -97,6 +97,9 @@ mainContentP[4].innerHTML = siteContent['main-content']['vision-content']
 let mainContentImg = document.getElementById('middle-img');
 mainContentImg.src = siteContent['main-content']['middle-img-src']
 
+
+// updates footer 
+
 let contactH4 = document.querySelector('.contact h4')
 contactH4.innerText = siteContent.contact['contact-h4']
 
