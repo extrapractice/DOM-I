@@ -125,10 +125,11 @@ contactEntries.forEach(entry => {
     }
 })
 
-let contactH = document.querySelectorAll('.contact h4');
-contactH.forEach((item,index) => {
-    item.innerText = contactH4s[index]
-})
+
+// updates footer 
+
+let contactH4 = document.querySelector('.contact h4')
+contactH4.innerText = siteContent.contact['contact-h4']
 
 let contactP = document.querySelectorAll('.contact p');
 contactP.forEach((item, index) => {
